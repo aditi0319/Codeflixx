@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="profileone.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="profile.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="pro.css">
+
+
+    <div class="container">
+      <!-- <div class="ripple-background"></div> -->
+      <div class="circle xxlarge shade1"></div>
+  <div class="circle xlarge shade2"></div>
+ 
+     
+        <div class="pro">
+          <!-- <img src="https://dummyimage.com/600x400/000/"> -->
+
+          <div class="profile-pic">
+            <img
+              alt="User Pic"
+              src="assets/profile.jpg"
+              id="profile-image1"
+              height="200"
+            />
+            <img class="camera" width="20" height="20" src="https://img.icons8.com/ios-filled/50/camera--v1.png" alt="camera--v1"/>     
+                   <input
+              id="profile-image-upload"
+              class="hidden"
+              type="file"
+              onchange="previewFile()"
+            />
+            <div style="color: #999"></div>
+          </div>
+          <div class="user-detail text-center">
+            <div class="form-group">
+             <h4>First Name</h3>
+              <input
+                type="text"
+                class="form-control"
+                id="Fname"
+                placeholder="Enter First Name"
+                name="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <h4>Last Name</h3>
+              <input
+                type="text"
+                class="form-control"
+                id="Lname"
+                placeholder="Enter Last Name"
+                name="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <h4>Mobile Number</h3>
+              <input
+                type="text"
+                class="form-control"
+                id="Mobile"
+                placeholder="Enter Mobile Number"
+                name="Mobile"
+              />
+            </div>
+
+            <div class="form-group">
+              <h4>Mail ID</h3>
+              <input
+                type="varchar"
+                class="form-control"
+                id="email"
+                placeholder="Enter Mail "
+                name="mail"
+              />
+            </div>
+            <div class="form-group">
+              <h4>Age</h3>              <input
+                type="int"
+                class="form-control"
+                id="age"
+                placeholder="Enter Age"
+                name="age"
+              />
+            </div>
+
+         <a href="main.html"> <button class="update">Update</button></a>
+          </div>
+        </div>
+    
+    </div>
+  </body>
+  <script>
+     function previewFile() {
+  var preview = document.querySelector('img');
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+
+  reader.addEventListener("load", function () {
+    preview.src = reader.result;
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+}
+                      $(function() {
+            $('.camera').on('click', function() {
+                $('#profile-image-upload').click();
+            });
+        });
+        
+  </script>
+</html>

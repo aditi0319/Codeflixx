@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Inter:wght@100;200;300&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Noto+Sans:ital,wght@0,500;1,400&family=Poppins:wght@100;300;400&family=Roboto&family=Sono:wght@300&display=swap');
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+font-family: 'Montserrat', sans-serif;
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    /* gap: 50rem; */
+height: 5rem;
+
+/* background: #3c4852; */
+}
+button{
+    /* width: 100%; */
+    font-size: 0.9rem;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center; */
+}
+#btn1{
+    width: 6.6rem;
+    border: 1px solid #3c4852;
+    border-radius: 5px;
+    background: #fff;
+    padding: 0.7rem  0.3rem;
+
+}
+#btn1:hover{
+    background: #f0efef;
+}
+#btn2
+{    width: 6.6rem;
+    padding: 0.7rem  0.3rem;
+
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #3c4852;
+}
+#btn2:hover
+{
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #2e383f;
+  
+}
+.container{
+    padding: 5rem 2rem 0 2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.container img{
+    height: 50vh;
+}
+.content{
+    width: 45%;
+}
+.content h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    color: #3c4852;
+}
+.content p span{
+color:#08bd80;
+font-weight: 400;
+}
+.content input{
+    width: 85%;
+    padding:1rem 3rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: 1px solid #3c4852;
+
+}
+.otp{
+    font-size: 14px;
+    font-weight: 300;
+}
+button.join{
+    width: 85%;
+    margin: 1rem 0;
+    padding:1rem 3rem;
+    border: none;
+    background: #3c4852;
+    color: #fff;
+    border-radius: 5px;
+}
+button.join:hover{
+    
+    background: #2e383f;
+    cursor: pointer;
+   
+}
+@media (max-width:1000px) {
+    .content{
+        width: 80%;
+    }
+    .container img{
+        margin-top: 2rem;
+        height: 40vh;
+    }
+}
+@media (max-width:600px) {
+    .content{
+        width: 100%;
+    }
+    .content h1{
+        font-size: 2rem;
+    }
+    .container img{
+        margin-top: 2rem;
+        height: 40vh;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav img{
+       display: none;
+       
+    }
+
+}
+@media (max-width:420px) {
+    .container img{
+        height: 25vh;
+    }
+}
